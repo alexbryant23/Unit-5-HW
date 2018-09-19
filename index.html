@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Employee Directory</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+  <main>
+    <div class="sidenav">
+      <i id="home" class="far fa-address-book"></i>
+      <p><span>SIMPLICITY</span></p>
+      <button id="print" class="button">Print</button>
+      <button id="verify" class="button">Verify</button>
+      <button id="lookup" class="button">Lookup</button>
+      <button id="contains" class="button">Contains</button>
+      <button id="update" class="button">Update</button>
+      <button id="add" class="button">Add</button>
+      <button id="delete" class="button">Delete</button>
+    </div>
+
+
+  </main>
+  <!-- <div class="inputContainter"> -->
+  <section class="input">
+    <div class="header">
+      <form id="welcome" data-view="home" class="show">
+        <h1 class="header-text">WELCOME TO<span> SIMPLICITY</span> </h1>
+        <h2 class="text-footer">The Minimalist Directory.</h2>
+      </form>
+      <form data-view="verify" id="verifyme">
+        <p>The Minimalist Directory.</p>
+        <input id="verifyInput" type="text" class="input-box" placeholder="Search by Name">
+        <button id="submitVerify" class="button"><i class="fas fa-search"></i></button>
+      </form>
+      <form data-view="lookup" id="lookupme">
+        <p>The Minimalist Directory.</p>
+        <input id="lookupInput" type="text" class="input-box" placeholder=" Search by Name">
+        <button id="submitLookup" class="button"><i class="fas fa-search"></i></button>
+      </form>
+      <form data-view="contains" id="containsme">
+        <p>The Minimalist Directory.</p>
+        <input id="containsInput" type="text" class="input-box" placeholder="Search by Letters">
+        <button id="submitContains" class="button"><i class="fas fa-search"></i></button>
+      </form>
+      <form data-view="print" id="printme">
+        <p>The Minimalist Directory.</p>
+      </form>
+      <form data-view="add" id="addme">
+        <p>The Minimalist Directory.</p>
+        <input id="addInput" type="text" class="input-box" placeholder="Add Name">
+        <input id="addInput2" type="text" class="input-box" placeholder="Add Office Number">
+        <input id="addInput3" type="text" class="input-box" placeholder="Add Phone Number">
+        <button id="submitAdd" class="button"><i class="fas fa-search"></i></button>
+      </form>
+      <form data-view="update" id="updateme">
+        <p>The Minimalist Directory.</p>
+        <input id="updateInput" type="text" class="input-box" placeholder="Name">
+        <input id="updateInput2" type="text" class="input-box" placeholder="Office Number">
+        <input id="updateInput3" type="text" class="input-box" placeholder="Phone Number">
+        <button id="submitUpdate" class="button"><i class="fas fa-search"></i></button>
+      </form>
+      <form data-view="delete" id="deleteme">
+        <p>The Minimalist Directory.</p>
+        <input id="deleteInput" type="text" class="input-box" placeholder="Enter Name to be Deleted">
+        <button id="submitDelete" class="button"><i class="fas fa-search"></i></button>
+      </form>
+      <div id="content" class="content-footer"></div>
+    </div>
+  </section>
+  <!-- </div> -->
+  <script src="render.js"></script>
+  <script src="dom.js"></script>
+  <script src="renderemployees.js"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
